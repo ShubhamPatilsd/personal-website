@@ -1,0 +1,112 @@
+a:link {
+  text-decoration: none ;
+}
+*:focus {
+    outline: none;
+}
+
+
+#hello{
+  color:white;
+  padding-left: 60px;
+  font-family: consolas,monaco,monospace;
+}
+#hellodiv{
+  color:white;
+  padding-left: 100px;
+  font-family: consolas,monaco,monospace;
+}
+.strong{
+  font-weight: bold;
+}
+.bigger{
+  font-size: 1.5em
+}
+html,body{
+
+  background-color: rgb(30,30,30);
+}
+
+#introtext{
+  padding-left: 100px;
+  /*padding-top: 100px;*/
+}
+
+#spacer{
+  padding-top: 15px;
+}
+.intro{
+  color: white;
+  animation: typing 2s steps(13) forwards,
+    blink 0.5s 6;
+  overflow:hidden;
+  white-space:nowrap;
+  font-family:consolas,monaco,monospace;
+
+  width: 13ch;
+  vertical-align: bottom;
+  display: inline-block;
+
+  /*border-right:4px solid white;*/
+}
+.directory{
+  color:rgb(182,181,64);
+  font-family: consolas,monaco,monospace;
+  vertical-align: bottom;
+  display: inline-block;
+}
+.prompt{
+  color:rgb(108,72,238);
+  font-family: consolas,monaco,monospace;
+  vertical-align: bottom;
+  display: inline-block;
+}
+.userinfo{
+  color:rgb(66,200,212);
+  font-family: consolas,monaco,monospace;
+  vertical-align: bottom;
+  display: inline-block;
+}
+#typing{
+  padding-left: 100px;
+
+  align-items: center;
+}
+
+#typearea{
+  border: none;
+  background-color: rgb(30,30,30);
+  color: white;
+  flex:1;
+  font-size: 2em;
+  font-family: consolas,monaco,monospace;
+  /*display: inline-block;*/
+  font-weight: bold;
+
+
+}
+
+.hide{
+  display:none;
+}
+.show{
+  display: flex;
+}
+
+
+@keyframes typing {
+  0%{
+    width: 0ch;
+  }
+  100%{
+    width: 13ch;
+  }
+}
+
+@keyframes blink {
+  0%,100% {
+    border-right:2px solid transparent;
+  }
+  50% {
+    border-right:2px solid #FFFFFF;
+  }

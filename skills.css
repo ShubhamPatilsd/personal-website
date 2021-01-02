@@ -1,0 +1,169 @@
+a:link {
+  text-decoration: none ;
+}
+*:focus {
+    outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+.strong{
+  font-weight: bold;
+}
+.bigger{
+  font-size: 1.5em
+}
+html,body{
+
+  background-color: rgb(30,30,30);
+  font-family: consolas,monaco,monospace;
+}
+
+#introtext{
+  padding-left: 100px;
+  /*padding-top: 100px;*/
+}
+
+#spacer{
+  padding-top: 15px;
+}
+.intro{
+  color: white;
+  animation: typing 1s steps(9) forwards,
+    blink 0.5s 2;
+  overflow:hidden;
+  white-space:nowrap;
+  font-family:consolas,monaco,monospace;
+
+  width: 9ch;
+  vertical-align: bottom;
+  display: inline-block;
+
+  /*border-right:4px solid white;*/
+}
+.directory{
+  color:rgb(182,181,64);
+  font-family: consolas,monaco,monospace;
+  vertical-align: bottom;
+  display: inline-block;
+}
+.prompt{
+  color:rgb(108,72,238);
+  font-family: consolas,monaco,monospace;
+  vertical-align: bottom;
+  display: inline-block;
+}
+.userinfo{
+  color:rgb(66,200,212);
+  font-family: consolas,monaco,monospace;
+  vertical-align: bottom;
+  display: inline-block;
+}
+#typing{
+  padding-left: 100px;
+
+  align-items: center;
+}
+.logo{
+  margin-left: auto;
+  margin-right: auto;
+  animation: fade 0.3s;
+}
+
+#typearea{
+  border: none;
+  background-color: rgb(30,30,30);
+  color: white;
+  flex:1;
+  font-size: 2em;
+  font-family: consolas,monaco,monospace;
+  /*display: inline-block;*/
+  font-weight: bold;
+
+
+}
+
+.card-list{
+  display: flex;
+  overflow-x: hidden;
+  animation: fade 0.3s;
+}
+
+#containing{
+  padding-left: 100px;
+  padding-right: 100px;
+  animation: fade 0.3s;
+
+}
+#html{
+  padding-top: 25px;
+}
+.card{
+  color: white;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  height: 350px;
+  width: 400px;
+  min-width: 250px;
+  padding: 1.5rem;
+  border-radius: 16px;
+  background: #17141d;
+  box-shadow: -1rem 0 3rem #000;
+  transition: .2s;
+  animation: fade 0.3s;
+
+}
+
+.card:hover{
+  transform: translateY(-1rem);
+  
+}
+.card:hover~.card{
+  transform: translateX(130px);
+
+}
+
+.card:not(:first-child){
+  margin-left: -130px;
+
+}
+
+.hide{
+  display:none;
+}
+.show{
+  display: flex;
+}
+
+
+@keyframes typing {
+  0%{
+    width: 0ch;
+  }
+  100%{
+    width: 9ch;
+  }
+}
+
+@keyframes blink {
+  0%,100% {
+    border-right:2px solid transparent;
+  }
+  50% {
+    border-right:2px solid #FFFFFF;
+  }
+}
+
+@keyframes fade {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}

@@ -1,0 +1,47 @@
+html,body{
+  background-color: rgb(30,30,30);
+}
+#introtext{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.intro{
+
+  color: white;
+
+  animation: typing 2s steps(11);
+  animation-iteration-count: infinite;
+  overflow:hidden;
+  white-space:nowrap;
+  font-family:consolas,monaco,monospace;
+
+  width: 11ch;
+  vertical-align: bottom;
+  display: inline-block;
+
+
+}
+#tip{
+  
+
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+}
+.tip{
+  color: white;
+  font-family:consolas,monaco,monospace;
+}
+@keyframes typing {
+
+  0%{
+    width: 0ch;
+  }
+  100%{
+    width: 11ch;
+  }
+}

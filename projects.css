@@ -1,0 +1,144 @@
+a:link {
+    text-decoration: none ;
+  }
+  *:focus {
+      outline: none;
+  }
+  
+  
+  .strong{
+    font-weight: bold;
+  }
+  .bigger{
+    font-size: 1.5em
+  }
+  html,body{
+  
+    background-color: rgb(30,30,30);
+  
+  }
+  
+
+  #aboutintro{
+    color:white;
+    padding-left: 60px;
+    font-family: consolas,monaco,monospace;
+    animation: fade 0.3s;
+  }
+
+  #introtext{
+    padding-left: 100px;
+    /*padding-top: 100px;*/
+  }
+
+    #projects{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        
+        padding-left: 160px;
+        width: 50%;   
+
+    }
+
+    div.desc {
+        padding: 15px;
+        text-align: center;
+        
+        
+        border: 1px solid white;
+        color:white;
+        font-family: consolas,monaco,monospace;
+      }
+
+    
+  
+  #spacer{
+    padding-top: 15px;
+  }
+  .intro{
+    color: white;
+    animation: typing 1s steps(11) forwards,
+      blink 0.5s 4;
+    overflow:hidden;
+    white-space:nowrap;
+    font-family:consolas,monaco,monospace;
+  
+    width: 11ch;
+    vertical-align: bottom;
+    display: inline-block;
+  
+    /*border-right:4px solid white;*/
+  }
+
+  
+  .directory{
+    color:rgb(182,181,64);
+    font-family: consolas,monaco,monospace;
+    vertical-align: bottom;
+    display: inline-block;
+  }
+  .prompt{
+    color:rgb(108,72,238);
+    font-family: consolas,monaco,monospace;
+    vertical-align: bottom;
+    display: inline-block;
+  }
+  .userinfo{
+    color:rgb(66,200,212);
+    font-family: consolas,monaco,monospace;
+    vertical-align: bottom;
+    display: inline-block;
+  }
+  #typing{
+    padding-left: 100px;
+  
+    align-items: center;
+  }
+  
+  #typearea{
+    border: none;
+    /*margin-top: 12px;*/
+    background-color: rgb(30,30,30);
+    color: white;
+    flex:1;
+    font-size: 2em;
+    font-family: consolas,monaco,monospace;
+    /*display: inline-block;*/
+    font-weight: bold;
+  
+  
+  }
+  
+  .hide{
+    display:none;
+  }
+  .show{
+    display: flex;
+  }
+  
+  
+  @keyframes typing {
+
+    0%{
+      width: 0ch;
+    }
+    100%{
+      width: 11ch;
+    }
+  }
+  
+  @keyframes blink {
+    0%,100% {
+      border-right:2px solid transparent;
+    }
+    50% {
+      border-right:2px solid #FFFFFF;
+    }
+  }
+    @keyframes fade {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+
+  
